@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>As Qualidades do Meu Amigo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #4caf50;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #4caf50, 0 0 20px #4caf50, 0 0 30px #4caf50, 0 0 40px #4caf50;
+            }
+            to {
+                text-shadow: 0 0 20px #4caf50, 0 0 30px #4caf50, 0 0 40px #4caf50, 0 0 50px #4caf50;
+            }
+        }
+        .qualities {
+            list-style-type: none;
+            padding: 0;
+        }
+        .qualities li {
+            background: #fff;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 20px;
+            font-size: 1.2em;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .qualities li:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        function showSurprise() {
+            document.getElementById('surprise').classList.toggle('hidden');
+        }
+    </script>
+</head>
+<body>
+    <h1>As Qualidades do Meu Amigo</h1>
+    <ul class="qualities">
+        <li onclick="showSurprise()">INTELIGÊNCIA EXTREMA</li>
+        <li onclick="showSurprise()">BELEZA SURREAL</li>
+        <li onclick="showSurprise()">Carisma Gigantesco</li>
+    </ul>
+    <div id="surprise" class="hidden">
+        <h2>Surpresa!</h2>
+        <p>Você é uma pessoa incrível e merece todo o reconhecimento do mundo! 🎉</p>
+    </div>
+</body>
+</html>
